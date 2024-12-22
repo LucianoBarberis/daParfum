@@ -86,6 +86,14 @@
     .buy-finished {
         gap: 50px;
         flex-direction: column;
+        height: auto;
+        margin: 60px 0px;
+    }
+    .buy-finished img {
+        width: 80%;
+    }
+    .cardFinish {
+        width: 80vw;
     }
     .containerCart {
         margin: 50px;
@@ -104,6 +112,7 @@
     .text-detail-container {
         align-items: center;
         margin: 20px 0px;
+        width: 70vw;
     }
     .images-detail-container {
         width: auto;
@@ -116,8 +125,17 @@
         height: 350px;
         width: 200px;
     }
+    .item-cart {
+        flex-direction: column;
+        height: 400px;
+        gap: 5px;
+        width: 300px;
+        padding: 10px;
+        font-size: 20px;
+    }
     .images-detail-container .main-image img{
         width: 100%;
+        margin: 0px;
     }
     .filterBox ul {
         flex-wrap: wrap;

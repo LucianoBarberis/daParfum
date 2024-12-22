@@ -36,21 +36,3 @@
 .price-detail {
   font-size: 32px;
 }
-
-@media (max-width: 550px) {
-  .item-detail{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .text-detail-container {
-    width: auto;
-    display: flex;
-    align-items: center;
-  }
-  .images-detail-container {
-    width: auto;
-    justify-content: center;
-    margin-right: 0px;
-  }
-}
