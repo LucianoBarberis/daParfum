@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
-import ItemDest from "../MainScreen/itemsDest.jsx"
 import { collection, getDocs } from "firebase/firestore"
 import db from "../../db/db.js"
+import { ItemDest } from "./ItemsDest.jsx";
 import { BsCreditCard, BsTruck, BsAward, BsCart4 } from "react-icons/bs";
 import './MainScreen.css'
 import { Link } from "react-router-dom";

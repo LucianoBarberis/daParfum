@@ -1,6 +1,6 @@
 import Item from "../ItemListContainer/Item"
 
-const ItemDest = ({ products }) => {
+export const ItemDest = ({ products }) => {
     return (
         <div className="itemDest">
             {
@@ -11,4 +11,3 @@ const ItemDest = ({ products }) => {
         </div>
     )
 }
-export default ItemDest
