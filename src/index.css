@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "toastify-js/src/toastify.css";
+
+:root {
+  --bg-color: #f3f3f3;
+  --primary-color: #4e5351;
+  --nav-color: #e9ebec;
+  --card-color: #eee;
+  --black-color: #212121;
+  --font: "Inter", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-weight: 200;
+  font-style: normal;
+}
+
+.bar {
+  width: 100%;
+  height: 15px;
+  background-color: var(--primary-color);
+}
+
+.ital {
+  font-style: italic;
+}
+
+.text-link {
+  color: #31393c;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+h1 {
+  color: var(--black-color);
+  margin: 30px 0px;
+  font-size: 45px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+h2 {
+  color: #3d3d3d;
+}
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #31393c;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 200px;
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: var(--card-color);
+  position: relative;
+  font-weight: 600;
+  font-size: 17px;
+  border: 1px solid rgba(0, 0, 0, 0.34);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms
+}
+
+.button:hover {
+  color: #e8e8e8;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.buttonAlt {
+  background-color: var(--card-color);
+  padding: 10px;
+  border-radius: 15px;
+  color: var(--black-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  font-size: 17px;
+  scale: 1.2;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.buttonAlt:hover{
+  background-color: var(--black-color);
+  color: var(--card-color);
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.45) 0px -5px -5px -1px,
+}
+
+.active {
+  background-color: var(--black-color);
+  color: var(--card-color);
+  box-shadow: rgba(50, 50, 93, 0.45) 0px -5px -5px -1px,
+}
+
+.large {
+  width: 220px;
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 50px 0px;
+}
+
+.divider .bar {
+  width: 30vw;
+  height: 2px;
+  background: linear-gradient(90deg, var(--bg-color) 0%, var(--black-color)50%);
+  border-radius: 20px;
+}
+
+.divider .bar2 {
+  width: 30vw;
+  height: 2px;
+  background: linear-gradient(90deg, var(--black-color)50%, var(--bg-color) 100%);
+  border-radius: 20px;
+}
+
+.divider .bar3 {
+  width: 80vw;
+  height: 2px;
+  background: linear-gradient(90deg, var(--bg-color) 0%, var(--black-color)50%, var(--bg-color) 100%);
+  border-radius: 20px;
+}
+
+.divider h2 {
+  font-size: 40px;
+}
+
+.itemlistcontainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 300px;
+}
+
+.itemlist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.itemDest {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 250px;
+  margin: 30px;
+  padding: 1%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+  height: 400px;
+}
+
+.item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--card-color);
+  transform: scale(1.04);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.img-item {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.text-item {
+  padding: 3% 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-descrip {
+  font-size: 14px;
+  color: #5e5e5e;
+}
+
+.containerInfo {
+  margin: 0px 13%;
+}
+
+.containerInfo p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.containerInfo img {
+  display: block;
+  margin: 67px auto;
+}
+
+.titleInfo {
+  color: var(--black-color);
+  margin: 30px 0px;
+  font-size: 45px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.titleInfo:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 34px;
+  }
+}

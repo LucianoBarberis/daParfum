@@ -1,0 +1,159 @@
+/* Relojes inteligentes o dispositivos muy pequeños */
+@media (max-width: 320px) {
+    
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+    /* Estilos para teléfonos de gama baja */ 
+    .empty-cart-div h2{
+        font-size: 22px;
+    }
+    .empty-cart img {
+        width: 90vw;
+    }
+}
+
+/* Teléfonos medianos (iPhone SE, Galaxy S) */
+@media (max-width: 600px) {
+    /* Estilos para la mayoría de los teléfonos */
+    .banner p {
+        width: auto;
+    }
+    .banner img {
+        width: 150px;
+        height: 150px;
+    }
+    .introduction p {
+        font-size: 35px;
+    }
+}
+
+/* Tablets pequeñas (iPad Mini) */
+@media (max-width: 768px) {
+    /* Estilos para tablets pequeñas */
+    .icons {
+        gap: 0px;
+    }
+    .icon {
+        width: 150px;
+    }
+    .introduction .img {
+        width: 90vw;
+    }
+    .navMobile {
+        display: block;
+    }
+    .nav .categories {
+        display: none;
+    }
+    .nav {
+        justify-content: space-between;
+        padding: 0px 60px;
+    }
+    .empty-cart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .empty-cart-div {
+        height: 40vh;
+    }
+}
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 992px) {
+    /* Tablets grandes o laptops pequeñas */
+    .titleInfo {
+        margin: 60px 0px 0px 0px;
+    }
+    .searchBar {
+        margin-top: 40px;
+    }
+    .inputSearch {
+        width: 70vw;
+    }
+    .heroContainer {
+        height: 350px;
+    }
+    .heroBox {
+        flex-direction: column;
+    }
+    .banner p {
+        font-size: 30px;
+    }
+    .buy-finished {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .containerCart {
+        margin: 50px;
+    }
+    .cart {
+        min-height: 500px;
+    }
+    .filterBox {
+        margin: 0px 10px;
+    }
+    .item-detail {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-detail-container {
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .images-detail-container {
+        width: auto;
+    }
+}
+
+/* Escritorios estándar */
+@media (max-width: 1200px) {
+    .item {
+        height: 350px;
+        width: 200px;
+    }
+    .images-detail-container .main-image img{
+        width: 100%;
+    }
+    .filterBox ul {
+        flex-wrap: wrap;
+    }
+    .filterBox ul li {
+        margin-top: 20px;
+    }
+    .boxItems {
+        margin: 0px 5%;
+    }
+    .introduction {
+        flex-direction: column;
+    }
+    .introduction p {
+        width: 70vw;
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .testimonial {
+        flex-direction: column;
+        height: auto;
+    }
+    .card {
+        width: 350px;
+    }
+}
+
+/* Pantallas extra grandes (4K, 8K) */
+@media (min-width: 1600px) {
+    .card-content {
+        font-size: 15px;
+    }
+    .buy-finished {
+        margin: 40px 0px;
+        height: auto;
+    }
+}

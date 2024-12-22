@@ -1,0 +1,91 @@
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 73.3vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form input {
+    border-radius: 15px;
+    padding: 1rem 0.75rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #212121;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.label {
+    align-self: flex-start;
+    color: var(--clr);
+    font-weight: 600;
+}
+
+.form .submit {
+    width: 250px;
+    cursor: pointer;
+}
+
+.form .submit:hover {
+    transform: scale(1.04);
+}
+
+.span {
+    text-decoration: none;
+    color: var(--bg-dark);
+}
+
+.span a {
+    color: var(--clr);
+}
+
+.buy-finished {
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73.7vh;
+}
+
+.buy-finished div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 40px;
+}
+
+.buy-finished div h2 {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.buy-finished img {
+    width: 500px;
+    margin-left: 40px;
+}

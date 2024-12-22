@@ -1,0 +1,41 @@
+.item-count{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.item-count .controls-count{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.controls-count button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.controls-count p{
+  font-weight: bold;
+  color: var(--black-color);
+  font-size: 22px;
+}
+
+.button-add-count{
+  font-weight: 400;
+  font-size: 22px;
+  padding: 5px 0;
+  background-color: var(--card-color);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: var(--black-color);
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.34);
+}
+
+.button-add-count:hover {
+  background-color: var(--black-color);
+  color: var(--card-color);
+}
