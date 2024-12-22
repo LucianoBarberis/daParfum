@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import ItemDest from "./itemsDest.jsx";
+import ItemDest from "./ItemsDest.jsx";
 import { collection, getDocs } from "firebase/firestore"
 import db from "../../db/db.js"
 import { BsCreditCard, BsTruck, BsAward, BsCart4 } from "react-icons/bs";
