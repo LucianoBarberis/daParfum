@@ -8,10 +8,10 @@ const Footer = () => {
                 <p>daParfum - Aromas autenticos</p>
                 <p>Encontranos en nuestras redes sociales:</p>
                 <div>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/profile.php?id=61571211712906" target="_blank" rel="noopener noreferrer">
                         <BsFacebook />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/da.parfum_/" target="_blank" rel="noopener noreferrer">
                         <BsInstagram />
                     </a>
                 </div>

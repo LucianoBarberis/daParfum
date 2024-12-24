@@ -10,6 +10,7 @@ import Cart from "./components/Cart/Cart"
 import './App.css'
 import AboutUsPage from "./components/AboutUsPage/AboutUsPage"
 import ContactPage from "./components/ContactPage/ContactPage"
+import NotFound from "./components/NotFound/NotFound"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <div className="bar"></div>
           <Footer />
